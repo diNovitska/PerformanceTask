@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication4
+namespace PerformanceTask
 {
     class Program
     {
@@ -18,7 +18,7 @@ namespace ConsoleApplication4
             Console.WriteLine(p.IsPalindrom(textToVerify));
 
             Dublication d = new Dublication();
-            Console.WriteLine(string.Join(" ", d.DublicateLinq(list)));
+            Console.WriteLine(string.Join(" ", d.DublicatesWithLinq(list)));
             Console.WriteLine(string.Join(" ", d.Dublicates(list)));
             
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication4
+namespace PerformanceTask
 {
     class Dublication
     {
@@ -22,7 +22,7 @@ namespace ConsoleApplication4
             return n;
         }
 
-        public IEnumerable<int> DublicateLinq(List<int> ar)
+        public IEnumerable<int> DublicatesWithLinq(List<int> ar)
         {
             return ar.OrderBy(i => ar.Count(r => i == r) > 1 ? 1 : 0).Distinct();
         }
