@@ -3,4 +3,5 @@ C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\bin\Debug\Con
 C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
 C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
 C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
-C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.csprojResolveAssemblyReference.cache
+C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.CodeAnalysisLog.xml
+C:\Users\Dianka\Desktop\C#\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.lastcodeanalysissucceeded
