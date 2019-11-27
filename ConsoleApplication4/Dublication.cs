@@ -26,7 +26,5 @@ namespace ConsoleApplication4
         {
             return ar.OrderBy(i => ar.Count(r => i == r) > 1 ? 1 : 0).Distinct();
         }
-
-
     }
 }
