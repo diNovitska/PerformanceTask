@@ -8,23 +8,51 @@ namespace PerformanceTask
 {
     class Dublication
     {
-        public List<int> Dublicates(List<int> n)
+        public int[] DublicatesMoveToEnd(int[] n)
         {
-            n.Sort();
-            for (int i = 1; i < n.Count; i++)
-                if (n[i] == n[i - 1])
+            int[] dublication = new int[n.Length];
+            int m = n.Length - 1;
+            int b = 0;
+            for (int i = 0; i < n.Length; i++)
+            {
+                for (int j = i + 1; j < n.Length; j++)
                 {
-                    var elem = n[i];
-                    n.RemoveAt(i);
-                    n.RemoveAt(i - 1);
-                    n.Add(elem);
+                    if ((n[i] == n[j]) && (n[i] != 0) && (n[j] != 0))
+                    {
+                        dublication[m] = n[i];
+                        dublication[m - 1] = n[j];
+                        m -= 2;
+                        n[i] = 0;
+                        n[j] = 0;
+                    }
                 }
-            return n;
+                if (n[i] != 0)
+                {
+                    dublication[b] = n[i];
+                    b++;
+                }
+            }
+            return dublication;
         }
-
-        public IEnumerable<int> DublicatesWithLinq(List<int> ar)
+        public int[] JustOneDublicateMoveToEnd(int[] nums)
         {
-            return ar.OrderBy(i => ar.Count(r => i == r) > 1 ? 1 : 0).Distinct();
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] == nums[j])
+                    {
+                        int temp = nums[j];
+                        int temp2 = nums[i];
+                        for (int k = j; k < nums.Length - 1; k++)
+                        {
+                            nums[k] = nums[k + 1];
+                        }
+                        nums[nums.Length - 1] = temp;
+                    }
+                }
+            }
+            return nums;
         }
     }
 }

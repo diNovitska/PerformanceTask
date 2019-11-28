@@ -11,15 +11,15 @@ namespace PerformanceTask
     {
         static void Main(string[] args)
         {
-            var list = new List<int>() {7, 8, 9, 1, 2, 8, 10, 2, 11, 5, 4, 4,3 };
+            int[] list = { 7, 8, 9, 1, 2, 8, 10, 2, 11, 5, 4, 4,3 };
             string textToVerify = "А роза упала на лапу Азора";
             Palindrom p = new Palindrom();
             Console.WriteLine(p.IsPalindromWithLoop(textToVerify));
             Console.WriteLine(p.IsPalindrom(textToVerify));
 
             Dublication d = new Dublication();
-            Console.WriteLine(string.Join(" ", d.DublicatesWithLinq(list)));
-            Console.WriteLine(string.Join(" ", d.Dublicates(list)));
+            Console.WriteLine(string.Join(" ", d.DublicatesMoveToEnd(list)));
+            Console.WriteLine(string.Join(" ", d.JustOneDublicateMoveToEnd(list)));
             
 
             Console.ReadKey();
